@@ -1,0 +1,147 @@
+/* === Reset básico === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* === Cabeçalho === */
+header {
+    background-color: #2e1f47;
+    color: white;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcf33;
+}
+
+/* === Hero === */
+.hero {
+    background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffcf33;
+    color: #2e1f47;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+/* === Livros === */
+.livros {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.livros h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #2e1f47;
+}
+
+.livros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.livro {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+
+.livro:hover {
+    transform: translateY(-5px);
+}
+
+.livro img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.livro h3 {
+    margin: 0.8rem 0;
+    color: #2e1f47;
+}
+
+.livro p {
+    font-weight: bold;
+    color: #555;
+}
+
+.livro button {
+    margin-top: 0.5rem;
+    background-color: #2e1f47;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.livro button:hover {
+    background-color: #44356b;
+}
+
+/* === Rodapé === */
+footer {
+    background-color: #2e1f47;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
